@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/ocean4.jpg" type="image/icon type">
+    <style>
+        body{
+            background-color:coral;
+           
+        }
+        .out{
+            width:100%;
+        }
+        main{
+            border-image: url(/Users/rites/OneDrive/Pictures/Screenshots/Karthikai-Deepam-1075146.jpg);
+            border-style: hidden;
+        }
+        .text{
+            background-color: transparent;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            margin-top: -750px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color:green;
+        }
+        #quiz-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option:hover {
+    background-color: #2980b9;
+}
+#restart-button{
+    border: 3px solid skyblue;
+    box-shadow: 2px 3px 10px currentColor;
+    padding: 10px;
+    border-radius: 30px;
+    width: 200px;
+    outline: 4px solid yellow;
+    font-size: 20px;
+    color: red;
+}
+.move{
+    margin-left: 100px;
+}
+@media screen and (max-width: 800px){
+    body{
+            background-color:coral;
+           width: 100%;
+        }
+        main{
+            
+            border-style: hidden;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: 150vh;
+        }
+        .text{
+            background-color: transparent;
+            width: 100%;
+            margin: auto;
+            margin-top: -750px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color:darkorange;
+        }
+        #quiz-container {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90% !important;
+    padding-right: 30px;
+}
+
+.option {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+}
+
+.option:hover {
+    background-color: #2980b9;
+}
+#restart-button{
+    border: 3px solid skyblue;
+    box-shadow: 2px 3px 10px currentColor;
+    padding: 10px;
+    border-radius: 30px;
+    width: 200px;
+    outline: 4px solid yellow;
+    font-size: 20px;
+    color: red;
+}
+.move{
+    margin-left: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.out{
+    width: 100%;
+    height: 150vh;
+    margin-bottom: -22px;
+}
+#question{
+width: 100%;
+font-size: 22px;
+}
+h1{
+    text-align: center;
+}
+}
+    
+
+    
+    </style>
+</head>
+<body>
+    <main>
+        <img  class="out" src="images/ocean14 - Copy.jpg" >
+     <div class="text">
+        <h1 style="color:rgb(33, 228, 33);"> Welcome To My world !</h1>
+        <p style="text-align: center;"> Lets Play The Game</p>
+        <p></p>
+        <div id="quiz-container">
+            <h1>Quiz App</h1>
+            <p id="question">Question goes here</p>
+            <div id="options">
+                <button class="option">Option 1</button>
+                <button class="option">Option 2</button>
+                <button class="option">Option 3</button>
+                <button class="option">Option 4</button>
+            </div>
+            <p id="score">Score: 0</p>
+        </div>
+        <div class="move">
+        <button id="restart-button">Restart Quiz</button>
+    </div>
+        <script src="quiz.js"></script>
+     </div>
+    </main>
+</body>
+</html>
